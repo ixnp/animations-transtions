@@ -1,0 +1,21 @@
+button {
+	height: 90px;
+	width: 290px;
+	font-size: 28px;
+	color: white;
+	border: none;
+	background-color: blue;
+	transition-property: background-color;
+	transition-duration: 1s
+	
+}
+/* on hover changes the state of 
+the background css from blue to green */
+/* transition-property lets you pick the  
+css property you want to make changes to 
+and lets you use things like transition-duration
+to control things like the duration
+of those changes.  */
+button:hover {
+	background-color: green;
+}
