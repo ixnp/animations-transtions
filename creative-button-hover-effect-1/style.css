@@ -1,0 +1,50 @@
+body {
+	/* centers everything with flexbox */
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: #272727;
+	font-family: sans-serif;
+	font-size: 45px;
+	border: 5px solid #272727;
+	padding: 40px 80px;
+	position: relative;
+	/* comment out overflow to see psudo-element */
+	overflow:hidden;
+}
+
+/* the before psudo element we built here
+ is a pointer to the top left of our element */
+ /* before creates a pseudo-element that is the 
+ first child of the selected element
+transform-origin put the refrence in the bottom
+left, transform: rotate(-90deg) rotated the 
+pseudo element counter clockwise 90degs 
+overflow:hidden from above hid the pseudo-element 
+while its rotated outside of the  orginal elements
+on hover transform: rotate(0deg); rotates the 
+pseudo-element back inside the orginal element 
+causing it to appear again. */
+
+a:before {
+	content: '';
+	position: absolute;
+	Left:0;
+	top:0;
+	background-color: #fff200;
+	height: 100%;
+	width:100%;
+	z-index: -1;
+	transform-origin: bottom left;
+	transform: rotate(-90deg);
+	transition:transform 1s;
+}
+
+a:hover:before {
+	transform: rotate(0deg);
+}
