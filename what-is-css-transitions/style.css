@@ -5,8 +5,12 @@ button {
 	color: white;
 	border: none;
 	background-color: blue;
-	transition-property: background-color;
-	transition-duration: 1s
+	/* transition-property: background-color color;
+	transition-duration: 1s;
+	transition-delay:1s; */
+	/* transition: background-color 3s ease-in 1s, 
+	color 2s ease 4s, border-radius 4s ease-out 6s; */
+	transition:all 3s ease-in 2s;
 	
 }
 /* on hover changes the state of 
@@ -15,7 +19,19 @@ the background css from blue to green */
 css property you want to make changes to 
 and lets you use things like transition-duration
 to control things like the duration
-of those changes.  */
+of those changes.  
+you can chose multiple properts with 
+transition-property or
+use the keyword ALL
+
+There is a short hand property you can use
+transition: property name duration ease delay
+
+use a comma to seperate multiple properties 
+
+*/
 button:hover {
 	background-color: green;
+	color:black;
+	border-radius: 50%;
 }
