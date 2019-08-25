@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transition</title>
+<style type="text/css">
+
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-bottom: 70px;
+	margin-top: 70px;
+	transition: transform 1s;
+}
+/* transform-origin is what the transform 
+takes as a point of refrence  
+without it items will use their centerpoint
+as the point of refrence 
+in this example the top left corner will be the
+point of refrence 
+it takes top, bottom, left and right as properties
+*/
+.second {
+	transform-origin: top left;
+	margin-bottom: 0;
+}
+
+.first:hover, .second:hover {
+	transform: rotate(30deg);
+}
+
+</style>
+</head>
+
+<body>
+
+	<img src="cat.jpg" alt="" class="first">
+	<img src="cat.jpg" alt="" class="second">
+
+</body>
+</html>
