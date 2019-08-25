@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transition</title>
+<style type="text/css">
+
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 2s;
+
+}
+
+img:hover {
+	/* moves it right */
+	/* transform: translateX(500px); */
+	 /* moves it left */
+	/* transform: translateX(-500px); */
+	/* moves it down */
+	/* transform: translateY(500px); */
+	/* moves it up */
+	/* transform: translateY(-500px); */
+	/* for both */
+	transform: translate(-500px, 200px);
+}
+/* When you write your transform property
+you'll write tranform, then the transform 
+function you'll like to apply and the value 
+for the specific function. 
+transfrom: translate(the value);
+translate moves elements along the browser
+along the x and y 
+transform: translate(10px, 10px)
+will move the element 10px to the right 
+and 10px to the bottom from its orginal position
+*/
+
+</style>
+</head>
+
+<body>
+
+	<img src="cat.jpg" alt="">
+
+</body>
+</html>
+
