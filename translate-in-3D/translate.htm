@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>translate in 3D</title>
+<style type="text/css">
+
+/* to make things 3d you need to use
+the z axis
+YOU MUST ALSO ADD THE PERSPECTIVE property
+to the container element 
+perspective is the distance between our eyes
+and the screen
+in this case this looks like the item is 
+getting bigger but its H and W isn't actually 
+changing. it's getting closer to you or farther away
+*/
+body {
+	perspective: 500px;
+}
+
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 1s;
+}
+
+img:hover {
+	/* transform: translateZ(300px); */
+	/* if this is larger then its perspective
+	it will "travel" past your head
+	it  will git bigger and bigger until it disapears 
+	giving the illusion of movement
+	*/
+	/* transform: translateZ(800px); */
+	
+	/* z is actually the default for rotate
+	to have it rotate in 3d you must rotate it 
+	with x or y  */
+	/* transform: rotateZ(120deg); */
+	/* this will flip it like a coin */
+	/* transform: rotateX(90deg); */
+	/* this will turn it like a door */
+	transform: rotateY(90deg);
+}
+
+</style>
+</head>
+
+<body>
+
+	<img src="cat.jpg" alt="">
+
+</body>
+</html>
