@@ -36,8 +36,7 @@
 #ease-in-out {
 	transition-timing-function: ease-in-out;	
 }
-/* translate, the location of the divs position on the
-page will change */
+
 .move:hover {
 	transform: translate(900px, 0);
 }

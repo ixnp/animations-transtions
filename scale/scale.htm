@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transition</title>
+<style type="text/css">
+
+img {
+	width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 200px;
+	transition: transform 2s;
+}
+
+img:hover {
+	/* 2 scales it to 2 times the width */
+	/* transform: scaleX(2); */
+	/* number less then 1 will decrease the scale */
+	/* transform: scaleX(.5); */
+	/* Y will scale the hight */
+	/* transform: scaleY(2); */
+	/* y less then 1 will shrink it */
+	/* transform: scaleY(.5); */
+	/* pass in two arguments and just use scale for both */
+	/* transform: scale(2,3); */
+	/* it will also work if you only put one number in */
+	/* it will just scale both WandH the same rate */
+	transform: scale(.25);
+}
+
+</style>
+</head>
+
+<body>
+
+	<img src="cat.jpg" alt="">
+
+</body>
+</html>
