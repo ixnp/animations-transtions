@@ -1,9 +1,9 @@
 body {
 	height: 100vh;
-	display:flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Lato', sans-serif
+	font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -13,24 +13,25 @@ body {
 	overflow: hidden;
 }
 
-img {
-	width: 100%
+.container img {
+	width: 100%;
+	transition: all .5s;
 }
 
 .caption {
 	position: absolute;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
+	bottom: 0;
+	left: 0;
+	height: 30%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: white;
-	transition: all 1s;
+	transition: all 0.5s;
 	background-color: black;
-	transform: translateY(-100%);
+	transform: translateY(100%)
 }
 
 .caption h1 {
@@ -43,12 +44,11 @@ img {
 	text-transform: capitalize;
 }
 
-.container:hover .caption{
+.container:hover .caption {
 	transform: translateY(0);
 }
 
 .container:hover img {
-	transition: all 1s;
-	transform: translateY(100%);
+	transform: translateY(-30%);
+	
 }
-
